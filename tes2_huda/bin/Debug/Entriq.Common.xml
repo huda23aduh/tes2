@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Entriq.Common</name>
+    </assembly>
+    <members>
+        <member name="T:Entriq.Common.IObjectFactory">
+            <summary>
+            Summary description for IObjectFactory.
+            </summary>
+        </member>
+        <member name="M:Entriq.Common.IObjectFactory.CreateInstance">
+            <summary>
+            Method that creates an instance of the target object.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Entriq.Common.IObjectFactory2">
+            <summary>
+            Similar to IObjectFactory this interface allows for parameters to 
+            the constructor.
+            </summary>
+        </member>
+        <member name="M:Entriq.Common.IObjectFactory2.CreateInstance(System.Object[])">
+            <summary>
+            Creates an instance of the target object
+            </summary>
+            <param name="paramsForConstructor"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Entriq.Common.ObjectFactoryCache">
+            <summary>
+            This class creates and caches all ObjectFactories
+            </summary>
+        </member>
+        <member name="M:Entriq.Common.ObjectFactoryCache.GetFactory(System.String)">
+            <summary>
+            This method will return a cached object factory instance or if no one exists it will create, cach and return an IObjectFactory
+             factory instance. If the type in the typestring does not implement the IObjectFactory null will be returned
+            </summary>
+            <param name="typeString">Type string on the form: Namespace.Class, AssembleyName</param>
+            <returns>An object factrory</returns>
+        </member>
+        <member name="M:Entriq.Common.ObjectFactoryCache.GetFactory2(System.String)">
+            <summary>
+            This method will return a cached object factory instance or if no one exists it will create, cach and return an IObjectFactory2
+             factory instance. If the type in the typestring does not implement the IObjectFactory2 an exception will be thrown
+            </summary>
+            <param name="typeString">Type string on the form: Namespace.Class, AssembleyName</param>
+            <returns>An object factrory</returns>
+        </member>
+        <member name="M:Entriq.Common.ObjectFactoryCache.GetFactory(Entriq.Common.TypeSettings)">
+            <summary>
+            This method will return a cached object factory instance or if no one exists it will create, cach and return an IObjectFactory
+             factory instance. If the type in the typestring does not implement the IObjectFactory null will be returned
+            </summary>
+            <param name="typeSettings">Type string on the form: Namespace.Class, AssembleyName</param>
+            <returns>An object factrory</returns>
+        </member>
+        <member name="T:Entriq.Common.TypeUtil">
+            <summary>
+            Utility class for creating types from strings and object from types.
+            </summary>
+        </member>
+        <member name="M:Entriq.Common.TypeUtil.#ctor">
+            <summary>
+            Prevent the external construction of this utility.
+            </summary>
+        </member>
+        <member name="M:Entriq.Common.TypeUtil.Create(Entriq.Common.TypeSettings)">
+            <summary>
+            Create an object using type information contained in a TypeSettings object.
+            </summary>
+            <param name="typeSettings">
+            Provides type information needed to create a class instance.
+            </param>
+            <returns>
+            An instance of the type described by supplied TypeSettings object.
+            </returns>
+        </member>
+        <member name="M:Entriq.Common.TypeUtil.Create(Entriq.Common.TypeSettings,System.Object[])">
+            <summary>
+            Create an object using type information contained in a TypeSettings object.
+            </summary>
+            <param name="typeSettings">
+            Provides type information needed to create a class instance.
+            </param>
+            <param name="args">
+            Constructor arguments.
+            </param>
+            <returns>
+            An instance of the type described by supplied TypeSettings object.
+            </returns>
+        </member>
+        <member name="M:Entriq.Common.TypeUtil.CreateType(Entriq.Common.TypeSettings)">
+            <summary>
+            Create a Type instance using type information contained in a TypeSettings object.
+            </summary>
+            <param name="typeSettings">
+            Provides type information needed to create a Type instance.
+            </param>
+            <returns>
+            An instance of the Type described by supplied TypeSettings object.
+            </returns>
+        </member>
+        <member name="M:Entriq.Common.TypeUtil.CreateType(System.String)">
+            <summary>
+            Create a Type instance for the given full type string.
+            </summary>
+            <param name="fullType">
+            Fully qualified type string.
+            </param>
+            <returns>
+            An instance of the Type corresponding to the given full type string.
+            </returns>
+        </member>
+        <member name="M:Entriq.Common.TypeUtil.Create(System.String,System.Object[])">
+            <summary>
+            Create a new instance of the specified type.
+            </summary>
+            <param name="fullType">
+            The fully qualified type string.
+            </param>
+            <param name="args">
+            Constructor arguments.
+            </param>
+            <returns></returns>
+        </member>
+        <member name="T:Entriq.Common.TypeSettings">
+            <summary>
+            Container for type information.
+            </summary>
+        </member>
+        <member name="F:Entriq.Common.TypeSettings.Comma">
+            <summary>
+            Full type delimiter.
+            </summary>
+        </member>
+        <member name="F:Entriq.Common.TypeSettings._type">
+            <summary>
+            Class type.
+            </summary>
+        </member>
+        <member name="F:Entriq.Common.TypeSettings._assembly">
+            <summary>
+            Assembly name.
+            </summary>
+        </member>
+        <member name="M:Entriq.Common.TypeSettings.#ctor(System.String)">
+            <summary>
+            Create a new instance of TypeSettings.
+            </summary>
+            <param name="fullType">
+            The fully qualified (5 part) type string.
+            </param>
+        </member>
+        <member name="M:Entriq.Common.TypeSettings.SplitType(System.String)">
+            <summary>
+             And splits the type into two strings, the type name and assembly name.
+            </summary>
+            <param name="fullType">
+            The fully qualified (5 part) type string.
+            </param>
+        </member>
+        <member name="M:Entriq.Common.TypeSettings.ToString">
+            <summary>
+            Retuns the type as a .NET style type string
+            Type, Assembley
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Entriq.Common.TypeSettings.Type">
+            <summary>
+            Get the object fully qualified type name
+            </summary>
+        </member>
+        <member name="P:Entriq.Common.TypeSettings.Assembly">
+            <summary>
+            Get the fully qualified assembly name of the object.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,881 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="tes2_huda.exe" version="1.0.0.4" publicKeyToken="69ab7d4e94127528" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="tes2_huda" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="tes2_huda.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Entriq.Common.dll" size="12288">
+      <assemblyIdentity name="Entriq.Common" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>7NH6OCaAEFsyE7xIbM4fuk8/tCvzEizUcXZHpkxKFAQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Entriq.IBS.Exceptions.dll" size="19968">
+      <assemblyIdentity name="Entriq.IBS.Exceptions" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>XPepxy2elgaSdmA3HIy7IxBL0ehuFnqc7c/2X2S/izo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="log4net.dll" size="247672">
+      <assemblyIdentity name="log4net" version="1.2.10.0" publicKeyToken="F465EA084B01A21F" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>lOR6PTVf8Yd52Lx6evZrB0x+eLcSBtGa3giqbE1khxI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MySql.Data.dll" size="424448">
+      <assemblyIdentity name="MySql.Data" version="6.9.9.0" publicKeyToken="C5687FC88969C44D" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>z1JCyodj5/UiC37FF0m11VPrQRt8tszqKfa8jk+yNYc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="653824">
+      <assemblyIdentity name="Newtonsoft.Json" version="10.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>lz/XDOSOWsQzoQG0KHFoDFHi/roq7sPUAN6kEVrzong=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OfficeOpenXml.Core.ExcelPackage.dll" size="59392">
+      <assemblyIdentity name="OfficeOpenXml.Core.ExcelPackage" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Xg7+u1jriTNSP/JtLA+Wc+uRxBqxckKCt7z8QVj7GfM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Oracle.ManagedDataAccess.dll" size="4877312">
+      <assemblyIdentity name="Oracle.ManagedDataAccess" version="4.122.1.0" publicKeyToken="89B483F429C47342" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>DYrMyQdPkxpDGIGWRmi2mfZUivi2Sk7TEdSEaxygQ3Y=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.AgreementManagement.ServiceContracts.dll" size="453120">
+      <assemblyIdentity name="PayMedia.ApplicationServices.AgreementManagement.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ANCfxIf99/hhDCRTi2H1UKbxyrcgcyixAvpYjth/E4Y=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.Anonymization.ServiceContracts.dll" size="22016">
+      <assemblyIdentity name="PayMedia.ApplicationServices.Anonymization.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>8Jh/Ec7cP72YPHCnQvZvFrYsZ74HiFqlME8bj5Gz2r8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.Arrears.ServiceContracts.dll" size="47104">
+      <assemblyIdentity name="PayMedia.ApplicationServices.Arrears.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>XHZqolB+jTJqeE5snm6AIuw8Wzpp7mFmu+kcgz3qQ/8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.Authentication.ServiceContracts.dll" size="11776">
+      <assemblyIdentity name="PayMedia.ApplicationServices.Authentication.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>/9hAFcOVxuRHenkgYk9FLaOzlLdXobzDHtNJtdqJHGU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.B2BSettlement.ServiceContracts.dll" size="73728">
+      <assemblyIdentity name="PayMedia.ApplicationServices.B2BSettlement.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>x+U2kZ5ri9DP4kBVc+/hjRyKLkB7/W8NmyaeCtw6DMg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.BackgroundManager.ServiceContracts.dll" size="29696">
+      <assemblyIdentity name="PayMedia.ApplicationServices.BackgroundManager.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>HVaJM6lmBNDIKifqBReIRHCnzFVBdGtxeTcgPZhFwCo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.Banking.ServiceContracts.dll" size="45056">
+      <assemblyIdentity name="PayMedia.ApplicationServices.Banking.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>RB5LW6Q7I0EdV22ZkSf15wSIqzwNlYgXFEoqFuUBSfg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.Batch.ServiceContracts.dll" size="25088">
+      <assemblyIdentity name="PayMedia.ApplicationServices.Batch.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>fdTU52m7c6lDRRrmSxiSAFyU+yBTmotonT/q2UVYtzQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.BillingEngine.ServiceContracts.dll" size="111104">
+      <assemblyIdentity name="PayMedia.ApplicationServices.BillingEngine.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>OC+BbpgScM2i9oxuek66qw0L/PrXW+inAC5WcvTnls8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.BusinessUnits.ServiceContracts.dll" size="20992">
+      <assemblyIdentity name="PayMedia.ApplicationServices.BusinessUnits.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>v0vgb9Miz0O19xmumq9AFJsK0+Ceo5WLxNZvCQmnzv0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.ClientProxy.dll" size="392704">
+      <assemblyIdentity name="PayMedia.ApplicationServices.ClientProxy" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>NqjDgczdY2eUmESFduOkj3Y3Bv8tN97oitdsx++0RYY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.Contacts.ServiceContracts.dll" size="59904">
+      <assemblyIdentity name="PayMedia.ApplicationServices.Contacts.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>0cNwlEBY8NnCAp0h/3+amThzBEB5aYzJ6cE/kNlX1XI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.Customers.ServiceContracts.dll" size="260096">
+      <assemblyIdentity name="PayMedia.ApplicationServices.Customers.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>QDTzwNVzl9yPUJSxX9orhZZoJZ6kA47ErWdCvHsWr2k=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.CustomFields.ServiceContracts.dll" size="39424">
+      <assemblyIdentity name="PayMedia.ApplicationServices.CustomFields.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>8D1RRzsepJJAikeykS2iHTZa6mthSjhwUMJe/ptXlgM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.DateFormulas.ServiceContracts.dll" size="35840">
+      <assemblyIdentity name="PayMedia.ApplicationServices.DateFormulas.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>icIYjO3M8ZUdgHYFO90lYrhRCGGIsVbHzRFa2bTmPsU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.Devices.ServiceContracts.dll" size="94208">
+      <assemblyIdentity name="PayMedia.ApplicationServices.Devices.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>3gDMkm1S5H4G5fshf9IURgs4KhyCc5pe/KrMOWg2fbA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.Distributors.ServiceContracts.dll" size="29184">
+      <assemblyIdentity name="PayMedia.ApplicationServices.Distributors.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>hyOzbRp3u0ADP8OQylXtqMz5PK87j2YrufD9tTZhgjw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.DocumentManagement.ServiceContracts.dll" size="26624">
+      <assemblyIdentity name="PayMedia.ApplicationServices.DocumentManagement.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>2WUQpXptkjkLt8JDKYKij21tmonF06NIGqHJIdCHfIk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.DocumentStorageSystem.ServiceContracts.dll" size="29184">
+      <assemblyIdentity name="PayMedia.ApplicationServices.DocumentStorageSystem.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>93cETjEmvhg9sULQ5btD0R8Kkkho4Xo5nDJ4xCYIMr4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.EnterpriseFacade.ServiceContracts.dll" size="40960">
+      <assemblyIdentity name="PayMedia.ApplicationServices.EnterpriseFacade.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>oNw3BvvKP6eUVLomvVlM0VP7lAktg2cOBXeOQHuEoO8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.EntityMetadata.ServiceContracts.dll" size="39424">
+      <assemblyIdentity name="PayMedia.ApplicationServices.EntityMetadata.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>dDIsoYfLOY6C8JXXI1wc8LhfIFFL1E9cbQgO7Re3P4k=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.Escalations.ServiceContracts.dll" size="20480">
+      <assemblyIdentity name="PayMedia.ApplicationServices.Escalations.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>oswnA5e9uCKaPCWKxe51XvUtJCdLbskp3+CyZm73JRk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.Factory.dll" size="14336">
+      <assemblyIdentity name="PayMedia.ApplicationServices.Factory" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>4GEaF1aw2zNEn0bJZ9ENPnMrTK5GJpBzbBfaznx6TeA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.Finance.ServiceContracts.dll" size="428032">
+      <assemblyIdentity name="PayMedia.ApplicationServices.Finance.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>yuqmwfu99zXmQXBK39dnjyLjHNSkZ+SMn/M3HuoLDI8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.History.ServiceContracts.dll" size="19968">
+      <assemblyIdentity name="PayMedia.ApplicationServices.History.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>BQf0U9IREAATYl0ku3MyiYy2PV2v0TxfyRCourDhoMg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.HostManagement.ServiceContracts.dll" size="16384">
+      <assemblyIdentity name="PayMedia.ApplicationServices.HostManagement.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ET7ebemCx9V88qGsBT8c0ivt4GUVFqa1dM/2z4Cb1Ck=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.Infrastructure.ServiceContracts.dll" size="63488">
+      <assemblyIdentity name="PayMedia.ApplicationServices.Infrastructure.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>8Glsdvgnf+peR1CJuPfVGaHZrD7xDWBn7n9o9JEdm5I=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.IntegrationFramework.ServiceContracts.dll" size="86016">
+      <assemblyIdentity name="PayMedia.ApplicationServices.IntegrationFramework.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ZdZWVLlbRI7OFIPYkHz/z1BVIDxRSEm4tLIa4/aZ1x8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.InvoiceRun.ServiceContracts.dll" size="84992">
+      <assemblyIdentity name="PayMedia.ApplicationServices.InvoiceRun.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>MbiLlKutOzZv2qH2gJ1Ra6IsRsfpkRKQ1dbTR+/EHHQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.Letters.ServiceContracts.dll" size="53760">
+      <assemblyIdentity name="PayMedia.ApplicationServices.Letters.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>kiQbhjgsXCN3mJVmjJvQ0ZP3PN2wawBn5yaFS4/HTZY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.Logistics.ServiceContracts.dll" size="88064">
+      <assemblyIdentity name="PayMedia.ApplicationServices.Logistics.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>78/IiR4PQomV9DjZNC5ZHmkhxu4fVMOSMcRK4esZ2sI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.MarketSegments.ServiceContracts.dll" size="17920">
+      <assemblyIdentity name="PayMedia.ApplicationServices.MarketSegments.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ob0aupCTe4vbGEcCUEpZ4/q11irlSSf0LCmhrEE1Gxo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.OfferManagement.ServiceContracts.dll" size="82432">
+      <assemblyIdentity name="PayMedia.ApplicationServices.OfferManagement.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ru2zyN2nhrT8VsWe7vEJYw3lWxzqJtxyfxpT21JcFlM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.OrderableEvent.ServiceContracts.dll" size="103936">
+      <assemblyIdentity name="PayMedia.ApplicationServices.OrderableEvent.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>fBoRh2ZdsZODp4gu4RMC1Zyy+torqrqakG2yE+OHyDc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.OrderableEventCatalog.ServiceContracts.dll" size="30720">
+      <assemblyIdentity name="PayMedia.ApplicationServices.OrderableEventCatalog.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ugT7h5Xymak92G7i0wGFSDXCW4MMLDK/pKoHRDFOczU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.OrderManagement.ServiceContracts.dll" size="107008">
+      <assemblyIdentity name="PayMedia.ApplicationServices.OrderManagement.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>HognVGa2qzWQu5JCa2tHKj4AdGV8+B/ALJx2MwG4bvQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.Payment.ServiceContracts.dll" size="62976">
+      <assemblyIdentity name="PayMedia.ApplicationServices.Payment.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>r0mAERHsNkyzDbP+tSeGwvvnEkusBLcQAa8ANIb5lMs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.Prepaid.ServiceContracts.dll" size="55296">
+      <assemblyIdentity name="PayMedia.ApplicationServices.Prepaid.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>DS7sTOcUAH63qCWw5G0+D549IxexZ1RMouXWrViBC0k=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.PriceAdjustment.ServiceContracts.dll" size="90112">
+      <assemblyIdentity name="PayMedia.ApplicationServices.PriceAdjustment.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>y//LUYUVNvInA7yKzNG5MNKvOJ/thmnDXyf+mMXcR9Q=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.Pricing.ServiceContracts.dll" size="58880">
+      <assemblyIdentity name="PayMedia.ApplicationServices.Pricing.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>iOfNJxRwlyHfzHoucwJZyPozf93rIzvrxC3DRKFp5EI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.ProductCatalog.ServiceContracts.dll" size="390144">
+      <assemblyIdentity name="PayMedia.ApplicationServices.ProductCatalog.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>CTx3K0mmJIzY/cI41BPuyw9hKd5vKQaIZsDuMEEt3bk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.Query.ServiceContracts.dll" size="61440">
+      <assemblyIdentity name="PayMedia.ApplicationServices.Query.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>CbdsF9CWybqdpztOqZpFihEgxWowRwaxG7Rcp9VT0kY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.QueueManager.ServiceContracts.dll" size="34816">
+      <assemblyIdentity name="PayMedia.ApplicationServices.QueueManager.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>DP9WTgdwQ43EH9S93bQsHoCWe0BrsOlZCw2XMJe7pFE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.Reporting.ServiceContracts.dll" size="14848">
+      <assemblyIdentity name="PayMedia.ApplicationServices.Reporting.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>/acqMK5U3UzG/jWM07iRqsvHmQHjg46rhsI5Lj6MCHE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.SandBoxManager.ServiceContracts.dll" size="27136">
+      <assemblyIdentity name="PayMedia.ApplicationServices.SandBoxManager.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>NiPotIQ9n5yUxwX4owYPh3pdpeBqSP1D1d/eWxiWvxg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.ScheduleManager.ServiceContracts.dll" size="37376">
+      <assemblyIdentity name="PayMedia.ApplicationServices.ScheduleManager.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>19i/f9h/2s6ksXhBeaBUQEQWR8gDyh4r1Vwn6GMigIk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.ServiceLocation.ServiceContracts.dll" size="9728">
+      <assemblyIdentity name="PayMedia.ApplicationServices.ServiceLocation.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Tx5iGBvVuhvj22qxSh/NJZRZE72E3CTD0HIEF9mfe5k=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.SharedContracts.dll" size="60928">
+      <assemblyIdentity name="PayMedia.ApplicationServices.SharedContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>UW8iltOYUEKNySukTB+MN2fSKurF9unqdNNrOr1rAa8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.SystemEvents.ServiceContracts.dll" size="24064">
+      <assemblyIdentity name="PayMedia.ApplicationServices.SystemEvents.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>0sTi4efmTsqSINFLCNvTtCrFDBOvU4PTgIVov7MQvOY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.Tax.ServiceContracts.dll" size="46080">
+      <assemblyIdentity name="PayMedia.ApplicationServices.Tax.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>FBzJZthqJtQs9yIZv8/QCOZOt/cJf4VdanCwvY2XOKY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.UISupport.ServiceContracts.dll" size="28160">
+      <assemblyIdentity name="PayMedia.ApplicationServices.UISupport.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>xM5PsTFSzCzVEXmYUbUvhLIPK6JjWnjIwOX3xyjBYWo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.Users.ServiceContracts.dll" size="99328">
+      <assemblyIdentity name="PayMedia.ApplicationServices.Users.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>fJN5y5ccCT5TsJ8aCV0Q150NMuNa3NEpnSx/XYKarkE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.ViewFacade.ServiceContracts.dll" size="978944">
+      <assemblyIdentity name="PayMedia.ApplicationServices.ViewFacade.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>EspqUPASNdhMphgzKX4E89T8XhDpOLPw9au9NbJGaiY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.VoIP.ServiceContracts.dll" size="78848">
+      <assemblyIdentity name="PayMedia.ApplicationServices.VoIP.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>6rCUuYkUKMwjtw6z/Fi0Rpuf1An59rZJGzUM254SpJs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.ApplicationServices.Workforce.ServiceContracts.dll" size="131584">
+      <assemblyIdentity name="PayMedia.ApplicationServices.Workforce.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>aHkBdzdE36dTyQwDYXG4ahewzGP/YhWXgYXe7ES9RQk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.Configuration.dll" size="9728">
+      <assemblyIdentity name="PayMedia.Configuration" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>V/99AjgGOnSSlbjeqOqX8+6T1rRP5+2Mv/Q3hYBtT+Q=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.Integration.CommunicationLog.ServiceContracts.dll" size="15872">
+      <assemblyIdentity name="PayMedia.Integration.CommunicationLog.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Ly/LXzUSNmqcu2t5LhwMtchswultD4z9PVhvZrvOSz4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.Integration.DataAggregator.ServiceContracts.dll" size="10752">
+      <assemblyIdentity name="PayMedia.Integration.DataAggregator.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>2BdOfkZlITogZy8gUBpRAchaEfaEDXgMNWdqBcmRbjQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PayMedia.Integration.IntegrationEvent.ServiceContracts.dll" size="24064">
+      <assemblyIdentity name="PayMedia.Integration.IntegrationEvent.ServiceContracts" version="62.24.0.0" publicKeyToken="C8D07E2301CBE008" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>z0V6T+P50tF7+Z1GpBGomxkbRW3WkMkzWKaoH30HtwY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.IO.FileSystem.Primitives.dll" size="22784">
+      <assemblyIdentity name="System.IO.FileSystem.Primitives" version="4.0.1.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Kysnvdo8dwZfI4Y2uB6i02VTjHGzeMPl1AqK1cwi2pY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.IO.Packaging.dll" size="51920">
+      <assemblyIdentity name="System.IO.Packaging" version="4.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>a77yplv1/pj7P2UX/7ewHe3KepCwTXd6zzD7X6HpI9g=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="tes2_huda.exe" size="127984">
+      <assemblyIdentity name="tes2_huda" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>tGTm5YK3C3A3LKLYO39GGgJ1afqi4guyjlQ0B5/EiK4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="tes2_huda.exe.config" size="1878">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>iuNU5radRBW3vXjy/pfClX7QqYqXaPluqWkJzleZem0=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-BRK3ODF\analyst" issuerKeyHash="db11359a6353eb4a465a19ff528624684dce4940" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>BXNLhPnOpZai4tS9mXqt0SIG4cFU7smfgIoVcDOoNnQ=</DigestValue></Reference></SignedInfo><SignatureValue>N7WAf2V6/pOGCLsax2E6e50t2nNp21V/dctSge2oMJqIIC0oxenQcl2RyeHOjVbJq6r2Y3mUgmoz2xFBQThG5uEhkrAQW8pHFzYKazpLhthH1wATHoDTxAfzufHGLwemho7uaPct9u7lZvADjbF4wXkPmYk92sl4p4QUSPpIOEI=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>wxU7gW4JJpcPpFmNrH5AAxlxvcteLHhUvVA8dqt0cgdYo8fVs2jJs1ph8m7ZVaxrPP1PVg41HzEoEhDU6XQyet6liPiHTGpRK2kU3rPbwSrjTzKu1iD6JshqQPcgknT3bZRk3n9f3CD5OaedtmCd44FWTH7dHSf5WNtB3O39yT8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="7436a83370158a809fc9ee54c1e10622d1ad7a99bdd4e2a296a5cef9844b7305" Description="" Url=""><as:assemblyIdentity name="tes2_huda.exe" version="1.0.0.4" publicKeyToken="69ab7d4e94127528" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-BRK3ODF\analyst</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>A3s90vGI3PrHtVBsspkysSiuqyO27iSlKWWk2+ShrYI=</DigestValue></Reference></SignedInfo><SignatureValue>LlnGXIV+q8z7oj4ROSaqU63R6SKdK4HtZZ099Ov4AbpDimMbLco3yBP8YV9/SlczvW52y7szCz/bgCAtMic7etzJx9pfRTh31IpRKVCU5itKqIWO77dOV8rpyX3KROuumkWVxncWiDlCP4z07AMp3eZKXVpTxx904Srrd2M3ETc=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>wxU7gW4JJpcPpFmNrH5AAxlxvcteLHhUvVA8dqt0cgdYo8fVs2jJs1ph8m7ZVaxrPP1PVg41HzEoEhDU6XQyet6liPiHTGpRK2kU3rPbwSrjTzKu1iD6JshqQPcgknT3bZRk3n9f3CD5OaedtmCd44FWTH7dHSf5WNtB3O39yT8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB9TCCAV6gAwIBAgIQWTB3eV3JLaZOh3cJQ9UTDzANBgkqhkiG9w0BAQsFADA5MTcwNQYDVQQDHi4ARABFAFMASwBUAE8AUAAtAEIAUgBLADMATwBEAEYAXABhAG4AYQBsAHkAcwB0MB4XDTE3MDYxOTA0MjM1OVoXDTE4MDYxOTEwMjM1OVowOTE3MDUGA1UEAx4uAEQARQBTAEsAVABPAFAALQBCAFIASwAzAE8ARABGAFwAYQBuAGEAbAB5AHMAdDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAwxU7gW4JJpcPpFmNrH5AAxlxvcteLHhUvVA8dqt0cgdYo8fVs2jJs1ph8m7ZVaxrPP1PVg41HzEoEhDU6XQyet6liPiHTGpRK2kU3rPbwSrjTzKu1iD6JshqQPcgknT3bZRk3n9f3CD5OaedtmCd44FWTH7dHSf5WNtB3O39yT8CAwEAATANBgkqhkiG9w0BAQsFAAOBgQAlezKo9NK7kW/fPk/Hu6dDMkqkkBNG7GtTBwvSuO8Pkf12XX50d6hVLZkTjpvFid0eO6AtzrcuEBR72CelfKBMA7U1b6v5I1h/9yW+411uDG1w+3BaEtzdOenGVPCI/r1RPacEAn+Ukb/ihA//61UFyi5bhG7YjGJ537sYzKAEbA==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
